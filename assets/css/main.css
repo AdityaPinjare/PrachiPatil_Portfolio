@@ -16,36 +16,36 @@
   --nav-font: "Poppins", sans-serif;
 }
 
-/* Global Colors — Army Dark Theme */
+/* Global Colors — Industrial Dark Theme */
 :root {
-  --background-color: #1a1a1a;
-  /* Dark background for the entire website */
-  --default-color: #e0ddd5;
-  /* Light khaki text for readability on dark backgrounds */
-  --heading-color: #d4a843;
-  /* Gold color for headings — military insignia inspired */
-  --accent-color: #4b6b3c;
-  /* Olive army green — primary brand accent */
-  --surface-color: #242424;
-  /* Dark card/surface background */
+  --background-color: #121212;
+  /* Deep slate for industrial feel */
+  --default-color: #cfd8dc;
+  /* Subtle grey for default text */
+  --heading-color: #ffffff;
+  /* Crisp white for clean engineered look */
+  --accent-color: #f57c00;
+  /* Vibrant safety orange for high contrast accent */
+  --surface-color: #1e1e1e;
+  /* Slightly lighter surface for cards/panels */
   --contrast-color: #ffffff;
-  /* White contrast text for buttons and accent backgrounds */
+  /* White contrast text for orange backgrounds */
 }
 
-/* Nav Menu Colors — Military Theme */
+/* Nav Menu Colors — Industrial Theme */
 :root {
-  --nav-color: #c5c0b4;
-  /* Muted khaki for nav links */
-  --nav-hover-color: #4b6b3c;
-  /* Olive green on hover */
-  --nav-mobile-background-color: #1a1a1a;
+  --nav-color: #90a4ae;
+  /* Blue-grey for standard nav */
+  --nav-hover-color: #f57c00;
+  /* Safety orange on hover */
+  --nav-mobile-background-color: #121212;
   /* Dark mobile nav background */
-  --nav-dropdown-background-color: #242424;
+  --nav-dropdown-background-color: #1e1e1e;
   /* Dark dropdown background */
-  --nav-dropdown-color: #e0ddd5;
+  --nav-dropdown-color: #cfd8dc;
   /* Light dropdown text */
-  --nav-dropdown-hover-color: #d4a843;
-  /* Gold hover for dropdown links */
+  --nav-dropdown-hover-color: #f57c00;
+  /* Orange hover for dropdown links */
 }
 
 
@@ -545,7 +545,7 @@ section,
   width: 100%;
   height: 130%;
   object-fit: cover;
-  z-index: 2;
+  z-index: 1;
 }
 
 .hero:before {
@@ -559,6 +559,7 @@ section,
 .hero .container {
   position: relative;
   z-index: 3;
+  padding-left: 600px;
 }
 
 .hero h2 {
