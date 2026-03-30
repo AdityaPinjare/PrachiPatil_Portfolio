@@ -566,6 +566,18 @@ section,
   margin: 0;
   font-size: 64px;
   font-weight: 700;
+  background: linear-gradient(90deg, var(--accent-color), #818cf8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradientText 5s ease infinite;
+}
+
+@keyframes gradientText {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .hero p {
@@ -866,6 +878,17 @@ section,
   font-size: 28px;
 }
 
+.portfolio .portfolio-item {
+  transition: 0.3s;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 30px 0px rgba(56, 189, 248, 0.2);
+}
+
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 0;
@@ -925,7 +948,8 @@ section,
 }
 
 .services .service-item:hover {
-  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 30px 0px rgba(56, 189, 248, 0.2);
+  transform: translateY(-8px);
 }
 
 .services .service-item.item-cyan i {
@@ -1488,25 +1512,33 @@ section,
 }
 
 .hero p span {
-  border-bottom: 3px solid #d4a843;
+  border-bottom: 3px solid var(--accent-color);
   color: #ffffff;
   font-weight: 700;
   padding-bottom: 2px;
 }
 
 .typed-cursor {
-  color: #d4a843;
+  color: var(--accent-color);
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .hero .social-links a {
   color: #ffffff;
   text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
 }
 
 .hero .social-links a:hover {
-  color: #d4a843;
-  transform: translateY(-3px);
-  transition: all 0.3s ease;
+  color: var(--accent-color);
+  transform: translateY(-5px) scale(1.1);
+  text-shadow: 0 0 15px var(--accent-color);
 }
 
 /* Section Titles — Gold underline accent */
